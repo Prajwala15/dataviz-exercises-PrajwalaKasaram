@@ -13,3 +13,8 @@ def load_data():
     df = pd.read_csv(Path(__file__).resolve().parent.parent / "data" / "co2_emissions.csv")
     df["Date"] = pd.to_datetime(df["Year"].astype(str) + "-01-01")
     return df
+
+df = load_data()
+
+st.title("🌱 CO2 Emissions Explorer")
+st.caption("Source: Our World in Data — ourworldindata.org/co2-emissions")
