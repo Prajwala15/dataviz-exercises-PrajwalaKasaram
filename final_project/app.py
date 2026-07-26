@@ -23,7 +23,7 @@ HIGHLIGHT = '#0072B2'
 
 @st.cache_data
 def load_data():
-    listings = pd.read_csv('data/listings.csv')
+    listings = pd.read_csv(r"C:\Users\kyasa\OneDrive\Documents\Data visualization\dataviz-exercises-PrajwalaKasaram\final_project\data\listings.csv\listings.csv")
     reviews = pd.read_csv('data/reviews.csv')
 
     listings['price'] = (
